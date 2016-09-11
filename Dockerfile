@@ -5,7 +5,7 @@ RUN apk update && \
     apk add \
     bluez \
     python \
-    python-pip
+    py-pip
 
 ENV BROADCOM_FIRMWARE="https://github.com/OpenELEC/misc-firmware/raw/master/firmware/brcm/BCM43430A1.hcd"
 
