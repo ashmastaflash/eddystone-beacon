@@ -10,3 +10,5 @@ RUN apk update && \
 ENV BROADCOM_FIRMWARE="https://github.com/OpenELEC/misc-firmware/raw/master/firmware/brcm/BCM43430A1.hcd"
 
 RUN wget $BROADCOM_FIRMWARE -O /lib/firmware/brcm/BCM43430A1.hcd
+
+COPY bin/runner.sh /
