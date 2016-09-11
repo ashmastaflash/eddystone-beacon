@@ -5,7 +5,8 @@ RUN apk update && \
     apk add \
     bluez \
     python3 \
-    py-pip
+    py-pip \
+    sudo
 
 RUN pip install PyBeacon
 
