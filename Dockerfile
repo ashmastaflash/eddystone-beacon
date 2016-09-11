@@ -7,6 +7,8 @@ RUN apk update && \
     python3 \
     sudo
 
+RUN easy_install pip
+
 RUN pip install PyBeacon
 
 ENV BROADCOM_FIRMWARE="https://github.com/OpenELEC/misc-firmware/raw/master/firmware/brcm/BCM43430A1.hcd"
