@@ -6,8 +6,9 @@ RUN apk update && \
     bluez \
     python3 \
     sudo
+ADD https://bootstrap.pypa.io/get-pip.py /
 
-RUN easy_install pip
+RUN python /get-pip.py
 
 RUN pip install PyBeacon
 
