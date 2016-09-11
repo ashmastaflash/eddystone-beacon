@@ -12,3 +12,5 @@ ENV BROADCOM_FIRMWARE="https://github.com/OpenELEC/misc-firmware/raw/master/firm
 ADD $BROADCOM_FIRMWARE /lib/firmware/brcm/BCM43430A1.hcd
 
 COPY bin/runner.sh /
+
+CMD /runner.sh
