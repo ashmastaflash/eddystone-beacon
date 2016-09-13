@@ -1,4 +1,3 @@
-#FROM resin/raspberrypi2-alpine:3.4-20160908
 FROM resin/%%RESIN_MACHINE_NAME%%-alpine:3.4
 MAINTAINER ashmastaflash
 
@@ -13,6 +12,12 @@ RUN python3 /get-pip.py
 
 RUN pip install PyBeacon
 
+# Here's a thread about the Broadcom license: https://github.com/raspberrypi/linux/issues/1325
+# If you use this Dockerfile.template to build an image, you'll be downloading
+# the Broadcom firmware referenced below.  You should acquire the license And
+# understand the implications of that license before proceeding.
+
+# And this is the firmware, coming from the OpenELEC project.
 ENV BROADCOM_FIRMWARE="https://github.com/OpenELEC/misc-firmware/raw/master/firmware/brcm/BCM43430A1.hcd"
 
 ADD $BROADCOM_FIRMWARE /lib/firmware/brcm/BCM43430A1.hcd
