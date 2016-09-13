@@ -1,5 +1,7 @@
 # Eddystone beacon
 
+## Runs on https://sitch.io
+
 This uses a templated Dockerfile, so in theory it should work with many
 platforms.  But who knows?  Not this guy.  Because I'm only testing on a RPi3.
 If you're having luck with another platform, I'd love to hear about it.  
