@@ -1,5 +1,5 @@
 #FROM resin/raspberrypi2-alpine:3.4-20160908
-FROM resin/$RESIN_MACHINE_NAME-alpine:3.4
+FROM resin/%%RESIN_MACHINE_NAME%%-alpine:3.4
 MAINTAINER ashmastaflash
 
 RUN apk update && \
