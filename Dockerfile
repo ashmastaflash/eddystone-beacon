@@ -1,4 +1,5 @@
-FROM resin/raspberrypi2-alpine:3.4-20160908
+#FROM resin/raspberrypi2-alpine:3.4-20160908
+FROM resin/$RESIN_MACHINE_NAME-alpine:3.4
 MAINTAINER ashmastaflash
 
 RUN apk update && \
@@ -6,8 +7,8 @@ RUN apk update && \
     bluez \
     python3 \
     sudo
-ADD https://bootstrap.pypa.io/get-pip.py /
 
+ADD https://bootstrap.pypa.io/get-pip.py /
 RUN python3 /get-pip.py
 
 RUN pip install PyBeacon
