@@ -16,7 +16,7 @@ As far as I can tell, you can't adjust the tx power of the RPi3's embedded BT
 radio.
 
 Under the covers this image uses Google's PyBeacon tool to broadcast the
-URL you set in the env var named `BROADCAST_URL`.  You should probably use a
+URL you set in the env var named `ADVERTISE_URL`.  You should probably use a
 URL shortening service, but I'm not judging.
 
 ## Tested platforms
