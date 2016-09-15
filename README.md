@@ -23,4 +23,5 @@ URL shortening service, but I'm not judging.
 
 | username        | platform                                |
 |-----------------|-----------------------------------------|
-| ashmastaflash   | Standard R-Pi3, with on-board bluetooth |
+| ashmastaflash   | Standard R-Pi3, with on-board Bluetooth |
+| ashmastaflash   | R-Pi2 with Sena Technologies UD100a     | 
